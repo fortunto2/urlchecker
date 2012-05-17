@@ -1,0 +1,15 @@
+AddDefaultCharset utf-8
+
+Options +FollowSymlinks
+RewriteEngine On
+RewriteBase /
+
+# Exclude /assets and /manager directories and images from rewrite rules
+RewriteRule ^(core|assets)/*$ - [L]
+RewriteRule \.(jpg|jpeg|png|gif|ico|css|js)$ - [L]
+
+# For Friendly URLs
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/(.*)/$ index.php?mode=$1&do=$2 [L,QSA]
+RewriteRule ^(.*)/$ index.php?mode=$1 [L,QSA]

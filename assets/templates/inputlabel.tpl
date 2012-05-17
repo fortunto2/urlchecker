@@ -1,0 +1,2 @@
+<input type="<?=$content['inputType'];?>" value="<?=$content['inputvalue'];?>" name="<?=$content['inputname'];?>" id="<?=$content['idcss'];?>" <?=$content['checked'];?>/>
+<label for="<?=$content['idcss'];?>" class="<?=$content['labelclass'];?>"><?=$content['textname'];?></label><br />

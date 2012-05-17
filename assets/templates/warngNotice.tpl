@@ -1,0 +1,1 @@
+<div class="notice warning"><span class="icon medium" data-icon="!"></span><?=$content;?> <a href="#close" class="icon close" data-icon="x"></a></div>
