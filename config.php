@@ -26,7 +26,7 @@ $config['fullurl']=true; //абсолютный или относительны�
 $config['route']=array('mode'=>1,'do'=>2);//Порядок маршрутизации
 
 $config['debug']['status']=true;
-$config['debug']['mysql']['server']='127.0.0.5'; //SQL SERVER
+$config['debug']['mysql']['server']='localhost'; //SQL SERVER
 $config['debug']['mysql']['user']='root';
 $config['debug']['mysql']['password']='';
 $config['debug']['mysql']['database']='urlchecker';

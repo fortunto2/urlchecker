@@ -3,7 +3,7 @@
     $(document).ready(function($){
         $('.sitelist tbody tr').each(function(){
             var siteUrl=$(this).find("th span.urlsite").attr("id");
-             $.ajax({
+             /*$.ajax({
                 url:'{~URL:"mode=parser;do=code"~}?url='+siteUrl,
                 type:"GET",
                 dataType: 'json',
@@ -43,7 +43,7 @@
                     }
                     $(this).text(data.value);
                 }
-            });
+            });*/
 
             $.ajax({
                 url:'{~URL:"mode=parser;do=igood"~}?url='+siteUrl,
@@ -66,7 +66,7 @@
                 }
             });
 
-            $.ajax({
+            /*$.ajax({
                 url:'{~URL:"mode=parser;do=counthost"~}?url='+siteUrl,
                 type:"GET",
                 dataType: 'json',
@@ -127,7 +127,7 @@
                     }
                     $(this).text(data.value);
                 }
-            });
+            });*/
         });
     });
 </script>

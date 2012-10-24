@@ -7,7 +7,9 @@ $ModSiteparam=new ModSiteparam();
 
 $out=array('error'=>'','value'=>0);
 if(isset($_GET['url']) && $Template->checkUrl('http://'.$_GET['url'])){
-    $out['value']=$ModSiteparam->igood($_GET['url']);
+    $tmp=$ModSiteparam->igood($_GET['url']);
+    $tmp=explode("/",$tmp);
+    $out['value']=$tmp[0]/$tmp[1];
 }else{
     $out['error']='error url';
     $out['value']=0;
